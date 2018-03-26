@@ -1,0 +1,118 @@
+.section {
+    text-align: center;
+    font-size: 3em;
+}
+
+#callbacks-placeholder {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    color: black;
+    z-index: 999;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#photoMap {
+    max-width:90%;
+    max-height:90%;
+}
+
+.steps {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#topMessage {
+    -webkit-animation-delay: 3s;
+    -webkit-animation-iteration-count: infinite;
+    color: white;
+}
+
+.backgroundFirstPage {
+
+    background-image: linear-gradient(to bottom right, rgba(15, 141, 143, 0.32), rgba(15, 141, 143, 0.35)),url("../img/Version2d93a8edc617cbd28af43f9264d907486.gif");
+    background-size: cover;
+    position: relative;
+
+}
+
+#countdown {
+    color: rgba(255, 255, 255, 0.51);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+#section1{
+    background: -webkit-gradient(linear, top left, bottom left, from(#f8f9fa), to(#7baabe));
+    background: -webkit-linear-gradient(#f8f9fa, #7BAABE);
+    background: linear-gradient(#f8f9fa,#7BAABE);
+}
+#section2{
+    background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#1e6147));
+    background: -webkit-linear-gradient(#7BAABE, #1e6147);
+    background: linear-gradient(#7BAABE,#1e6147);
+}
+
+#section4{
+    background: -webkit-gradient(linear, top left, bottom left, from(#1e6147), to(#0f8d8f));
+    background: -webkit-linear-gradient(#1e6147, #0F8D8F);
+    background: linear-gradient(#1e6147,#0F8D8F);
+}
+
+#section3{
+    background-color: #1e6147;
+}

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fullPage CSS-->
+    <link rel='stylesheet prefetch' href='https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css'>
+
+    <!-- WebPage CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mapZoom.css">
+
+    <!-- Animate CSS-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<!-- Bootstrap v4 navigation bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 999;">
+    <a class="navbar-brand" href="#firstPage">ThaiFun Festival</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="signUpOrRegister.html">Login</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#secondPage">Kits <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#3rdPage">Line up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#4thPage">Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#5thPage">Sponsors</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+
+<div id="fullpage">
+    <div class="section backgroundFirstPage text-white">
+        <div class="animated fadeIn">
+
+            <h1 class="display-2">Warning!</h1>
+            <h1 class="display-4">A <dfn style="color: khaki"><abbr
+                    title="adjective | of the nature of a catastrophe, or disastrous event;">catastrophic</abbr></dfn>
+                festival is coming to Eindhoven in</h1>
+
+            <p id="countdown"></p>
+
+            <div style="margin-top: 15%">
+                <p class="lead">Please check our guide below!</p>
+                <i id="topMessage" class="fas fa-chevron-down animated bounce"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="section1">
+        <div>
+            <h1 class="display-4">STEP 1. Choose a survivor kit</h1>
+        </div>
+
+        <div class="slide" data-anchor="slide1">
+            <div class="container" style="height: inherit">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="img/placeholder.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1><i class="fas fa-ticket-alt"></i> The Early Survivor Kit <i class="fas fa-ticket-alt"></i>
+                        </h1>
+                        <p class="lead">This kit is for professional survivors. We only have a few of them. <strong>Hurry
+                            up!</strong></p>
+                        <p class="lead"><strong>57 out of 200 available</strong></p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item lead">Ticket</li>
+                            <li class="list-group-item lead">T-shirt - Early Survivor Edition</li>
+                            <li class="list-group-item lead">Poster - Signed by <strong>Foo Fighters</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+            <div class="container" style="height: inherit">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="img/placeholder.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1><i class="fas fa-ticket-alt"></i> The Basic Survivor Kit <i class="fas fa-ticket-alt"></i>
+                        </h1>
+                        <p class="lead">This is a basic kit for regular survivors. Isn't the best our there but is
+                            <strong>enough</strong> to survive.</p>
+                        <p class="lead"><strong>125 out of 300 available</strong></p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item lead">Ticket</li>
+                            <li class="list-group-item lead">T-shirt - Basic Survivor Edition</li>
+                            <li class="list-group-item lead">Poster - Signed by a <strong>random artist</strong></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide" data-anchor="slide2">
+            <div class="container" style="height: inherit">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="img/placeholder.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1><i class="fas fa-ticket-alt"></i> The Late Survivor Kit <i class="fas fa-ticket-alt"></i>
+                        </h1>
+                        <p class="lead">This is a late kit for our late survivors. A bit late but were glad you decided to <strong>join</strong>!</p>
+                        <p class="lead"><strong>259 out of 500 available</strong></p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item lead">Ticket</li>
+                            <li class="list-group-item lead">T-shirt - Late Survivor Edition</li>
+                            <li class="list-group-item lead">Poster - Classic Thaifun Festival poster</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <h1 class="display-4">STEP 2. Check the lineup</h1>
+        <p class="lead">We have the best artist prepare to guide you thought a sensational experience during our attempt to survive the most dangerous festival ever made</p>
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <h1 class="display-4">21 MAY</h1>
+                    <hr>
+                    <h1 class="">FOO FIGHTERS</h1>
+                    <h1 class="">OUTKAST</h1>
+                    <h2 class="">JACK JACKSON</h2>
+                    <h3 class="">IMAGINE DRAGONS</h3>
+                    <h3 class="">Keane</h3>
+                    <h3 class="">Snow Patrol</h3>
+                    <h4 class="">Zap Mama</h4>
+                    <h4 class="">Gratitude</h4>
+                    <h4 class="">Buck 65</h4>
+                </div>
+                <div class="col">
+                    <h1 class="display-4">22 MAY</h1>
+                    <hr>
+                    <h1 class="">BECK</h1>
+                    <h1 class="">MOBY</h1>
+                    <h2 class="">Childish Gambino</h2>
+                    <h3 class="">The KOOKS</h3>
+                    <h3 class="">SUM41</h3>
+                    <h3 class="">Empire of the Sun</h3>
+                    <h4 class="">Bonobo</h4>
+                    <h4 class="">Flume</h4>
+                    <h4 class="">Major Lazer</h4>
+                </div>
+                <div class="col">
+                    <h1 class="display-4">23 MAY</h1>
+                    <hr>
+                    <h1 class="">Calvin Harris</h1>
+                    <h1 class="">SIA</h1>
+                    <h2 class="">Cold War Kids</h2>
+                    <h3 class="">Pete Yorn</h3>
+                    <h3 class="">Last Shadow Puppets</h3>
+                    <h3 class="">ZHU</h3>
+                    <h4 class="">Edward Shape</h4>
+                    <h4 class="">Savages</h4>
+                    <h4 class="">Beach house</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section3">
+        <div class="container">
+            <h1 class="display-4">STEP 3. Check the map</h1>
+            <div class="row">
+                <div class="col-4">
+                    <h3><i class="far fa-map"></i> About the location</h3>
+                    <hr>
+                    <p class="lead">
+                        We choose the safest place outside the city to party and for having fun
+                    </p>
+                    <h5 >The festival has 5 stages</h5>
+                    <ul class="lead list-group">
+                        <li class="list-group-item">The Thaifun Main Stage</li>
+                        <li class="list-group-item">The Pavilion Stage</li>
+                        <li class="list-group-item">The Backyard Stage</li>
+                        <li class="list-group-item">The Porch Stage</li>
+                        <li class="list-group-item">The Lawn Stage</li>
+                    </ul>
+                    <p class="lead">We also have a lot of supplies to survive, free WI-FI, surviving equipment in the
+                        merchandise store and much more!</p>
+                </div>
+                <div class="col-8">
+                    <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(img/festivalMap.png);">
+                        <img src="img/festivalMap.png"/>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="section" id="section4">
+        <h1 class="text-white">A huge thanks for our sponsors that helped saving people from Eindhoven!</h1>
+
+        <div id="sponsors" class="container">
+
+            <div class="row text-white">
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="row text-white">
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="row text-white">
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="row text-white">
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-square fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container text-white">
+            <hr style="background-color: white;">
+            <p class="lead">Stay connected with us via:</p>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <i class="fab fa-facebook"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fab fa-youtube-square"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fab fa-snapchat-square"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+
+                <div class="col">
+                    <i class="fab fa-google-plus-square"></i>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+
+
+            <p class="lead">Created and designed by Eventus</p>
+        </footer>
+
+    </div>
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js'></script>
+
+
+<!-- Countdown -->
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
+            + minutes + " minutes " + seconds + " seconds ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Kits for the event are sold out!";
+        }
+    }, 1000);
+</script>
+
+<!-- Optional JavaScript -->
+<script src="js/index.js"></script>
+<script src="js/zoomMap.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
