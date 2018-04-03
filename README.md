@@ -15,7 +15,7 @@ This project consists of several C# applications and a website for promoting a f
 ## Deliverables
 
 * Project Plan
-* [![Project Plan]][project-plan-url]
+* [Project Plan][project-plan-url]
 * Setup Document
 * Process Document
 * Prototype for the Website (Static)
