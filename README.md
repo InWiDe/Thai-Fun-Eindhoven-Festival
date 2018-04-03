@@ -8,9 +8,9 @@ This project consists of several C# applications and a website for promoting a f
 
 ## Project Members
 
-Badinescu Marius Catalin
-Andrianov Nikita
-Taurius Antanevicius
+* Badinescu Marius Catalin
+* Andrianov Nikita
+* Taurius Antanevicius
 
 ## Deliverables
 
