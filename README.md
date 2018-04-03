@@ -14,11 +14,10 @@ This project consists of several C# applications and a website for promoting a f
 
 ## Deliverables
 
-* Project Plan
 * [Project Plan][project-plan-url]
-* Setup Document
-* Process Document
-* Prototype for the Website (Static)
+* [Setup Document][setup-document-url]
+* [Process Document] [process-document-url]
+* [Prototype for the Website (Static)] [website-url]
 
 ## Release History
 
@@ -40,4 +39,7 @@ This project consists of several C# applications and a website for promoting a f
 
 <!-- Markdown link & img dfn's -->
 [project-plan-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Project%20Plan.docx
+[setup-document-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Setup%20document.docx
+[process-document-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Process%20document.docx
+[website-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Prototype/index.html
 
