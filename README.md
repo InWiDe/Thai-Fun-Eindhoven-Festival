@@ -1,1 +1,38 @@
-Prop project
+# PROP Project
+> Short blurb about what your product does.
+
+
+This project is a .
+
+![](header.png)
+
+## Project Members
+
+Badinescu Marius Catalin
+Andrianov Nikita
+Taurius Antanevicius
+
+## Deliverables
+
+* Project Plan
+* Setup Document
+* Process Document
+* Prototype for the Website (Static)
+
+## Release History
+
+
+* 0.1.0
+    * The first proper release
+    * Created proper Readme.MD file
+* 0.0.1
+    * Work in progress
+
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
