@@ -1,10 +1,10 @@
 # PROP Project
-> Short blurb about what your product does.
+> Project P - phase
 
 
-This project is a .
+This project consists of several C# applications and a website for promoting a festival named "Thai Fun Eindhoven Festival"
 
-![](header.png)
+![](headerjpg.jpg )
 
 ## Project Members
 
