@@ -1,0 +1,19 @@
+body {
+    background-color: #1e6147;
+}
+
+#ticketBackground {
+    background-color: #f8ecc2;
+    background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#basketBottomRightCorner {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 80%;
+    background-color: #242a40;
+
+}
