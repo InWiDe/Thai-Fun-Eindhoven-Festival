@@ -41,5 +41,5 @@ This project consists of several C# applications and a website for promoting a f
 [project-plan-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Project%20Plan.docx
 [setup-document-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Setup%20document.docx
 [process-document-url]: https://git.fhict.nl/I388250/Prop-Project/blob/master/Process%20document.docx
-[website-url]: i383778.hera.fhict.nl/index.html
+[website-url]: https://i383778.hera.fhict.nl/index.html
 
