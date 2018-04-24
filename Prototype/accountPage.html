@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/accountPage.css">
@@ -12,7 +16,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 999;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="z-index: 999;">
     <a class="navbar-brand" href="index.html">ThaiFun Festival</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,23 +25,31 @@
 
 </nav>
 <hr style="border-top: 20px dashed transparent">
-<div id="basketBottomRightCorner">
-    <p style="color: white">Basket with modal</p>
+<div id="basketBottomRightCorner" class="text-white">
+
+
+    <button type="button" class="btn btn-primary" id="checkoutButton">
+        <i class="fas fa-shopping-cart fa-4x"></i>
+         <span class="badge badge-light" style="font-size: larger;">1</span>
+        <span class="sr-only">unread messages</span>
+    </button>
+
 </div>
-<div class="container" id="ticketBackground">
+<div class="container">
     <div class="row">
-        <div class="col-4" style="background-color: darkcyan;">
+        <div class="col-4" style="background-color: white;border-radius: 30px 0 0 30px;border-right: 10px dashed black">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/WM2007_QRCode.svg" alt="Template QR Code">
         </div>
-        <div class="col-8">
+        <div class="col-8 text-white" id="ticketBackground">
             <h1></h1>
-            <h1 class="text-center">Thaifun Festival Pass</h1>
-            <h1 class="text-center"><span style="text-decoration: line-through;color: dimgrey">24 </span>  | 25 | 26 July 2018</h1>
-            <hr style="border-top: 10px dashed black;">
-            <p>Kit Type: The Early Survivor </p>
-            <p>Ticket Unique Number: #23324234234</p>
-            <p>Addition relevant information 1</p>
-            <p>Addition relevant information 2</p>
+            <h1 class="text-center display-4">Thaifun Festival Pass</h1>
+            <h1 class="text-center"><span style="color: dimgrey">24 </span>  | 25 | 26 July 2018, Eindhoven</h1>
+            <hr style="border-top: 10px dashed white;">
+            <p class="lead text-right">Name: <strong>John Doe</strong></p>
+            <p class="lead text-right">Kit Type: <strong>The Early Survivor </strong></p>
+            <p class="lead text-right">Ticket Unique Number: <strong> #23SM6100QR</strong></p>
+            <p class="lead text-right">Camping: <strong>Tent + Car</strong></p>
+
             <p></p>
         </div>
     </div>
@@ -48,21 +60,21 @@
 <div class="container" style="background-color: transparent;">
     <div class="row">
         <div class="col-6   ">
-        <img src="img/coa17_campingdiagram_cc_mustcar_v1.png" alt="" style="width: inherit;">
+        <img src="img/coa17_campingdiagram_cc_size_v1.png" alt="" style="width: inherit;">
     </div>
 
-        <div class="col-6" style="background-color:lightcoral">
-            <h1>Current Camping: No Camping</h1>
+        <div class="col-6" style="background-color:lightcoral;border-radius: 0 30px 30px 0;border-left: 7px rgb(220,115,115) solid">
+            <h1>Current Camping: Tent + Car</h1>
             <p class="lead">About the camping</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-            <div class="row">
-                <div class="col-6">
-                    <button>Upgrade to camping type 1</button>
-                </div>
-                <div class="col-6">
-                    <button>Upgrade to camping type 2</button>
-                </div>
-            </div>
+            <p>The camping space is 10 FT. x 30 FT. There can only be be installed one tent.</p>
+            <!--<div class="row">-->
+                <!--<div class="col-6">-->
+                    <!--<button>Upgrade to camping type 1</button>-->
+                <!--</div>-->
+                <!--<div class="col-6">-->
+                    <!--<button>Upgrade to camping type 2</button>-->
+                <!--</div>-->
+            <!--</div>-->
 
 
         </div>
@@ -71,13 +83,13 @@
 <div>
     <hr style="border-top: 20px dashed transparent">
 </div>
-<div class="container" style="background-color: darkcyan">
+<div class="container" style="background-color: lightcoral; border-radius: 30px 30px 0 0 ;">
     <div>
-        <h1 class="text-center">Additional survival tools (Merchandise)</h1>
+        <h1 class="text-center display-4">Additional survival tools </h1>
         <div class="row">
             <div class="col-4">
-                <img src="img/placeHolderMerchandise.svg" alt="" width="inherit">
-                <p>Shirt Design 1</p>
+                <img src="img/tShirt1.png" alt="" width="100%">
+                <p class="lead text-center">Shirt - Loud Cat Design</p>
 
             </div>
             <div class="col-4">
@@ -104,7 +116,7 @@
                 <img src="img/placeHolderMerchandise.svg" alt="" width="inherit">
                 <p>Pins Kit</p>
             </div>
-            <hr>
+
     </div>
 </div>
 

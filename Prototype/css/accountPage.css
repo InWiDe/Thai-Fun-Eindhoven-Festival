@@ -1,19 +1,30 @@
 body {
-    background-color: #1e6147;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 #ticketBackground {
-    background-color: #f8ecc2;
-    background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+    background-color: white;
+    background: linear-gradient(transparent 50%,lightcoral ), url("../img/footer_lodyas.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #basketBottomRightCorner {
     position: fixed;
-    width: 100px;
+    width: auto;
     height: 100px;
     right: 0;
     top: 80%;
-    background-color: #242a40;
+    background-color: transparent;
 
 }
+
+#checkoutButton {
+    background-color: lightcoral;
+    border-color: lightcoral;
+}
+
+#checkoutButton:hover {
+    border-color: white;
+}
+
