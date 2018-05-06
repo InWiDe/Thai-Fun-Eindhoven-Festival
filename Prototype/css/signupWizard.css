@@ -2,4 +2,80 @@ body {
     background-image: linear-gradient(to bottom right, rgba(15, 141, 143, 0.32), rgba(15, 141, 143, 0.35)),url("../img/Version2d93a8edc617cbd28af43f9264d907486.gif");
     background-size: auto;
     font-family: 'Titillium Web', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #1fafa7;
+}
+
+/* Create radio button with image */
+
+label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not clickable */
+    position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 100px;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #0f8d8f;
+}
+
+li > label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 5px;
+}
+
+li > label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #fd8c7a;
 }

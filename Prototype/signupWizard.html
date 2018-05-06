@@ -5,13 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/signupWizard.css">
-    <title>Hello, world!</title>
+
+
+    <title>Sign Up Wizard</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 999;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light " style="z-index: 999;">
     <a class="navbar-brand" href="index.html">ThaiFun Festival</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,58 +27,331 @@
 
 </nav>
 
-<div class="container">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div style="width: 80%;height: 500px;background-color: indianred;margin: 0 auto;">
-                    <h3 class="text-center">STEP 1. Choose Survival Kit</h3>
+<div class="container" style="padding-top: 20px;">
+    <div class="row">
+        <div class="col-8">
+            <form id="regForm" action="" style="margin-top: 45px;">
+
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                    <h1>Step 1. Ticket</h1>
+                    <p class="lead">Please choose the ticket type: </p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <p class="text-center">The Early Survivor Kit</p>
+                            <label>
+                                <input type="radio" name="fb" value="early" />
+                                <img style="width: 100%" src="img/lvl1.png" alt="">
+                            </label>
+                            <p class="text-center">259 out of 500 available</p>
+
+
+                        </div>
+                        <div class="col-4">
+                            <p class="text-center">The Basic Survivor Kit </p>
+                            <label>
+                                <input type="radio" name="fb" value="basic" />
+                                <img style="width: 100%" src="img/lvl2.png" alt="">
+                            </label>
+                            <p class="text-center">57 out of 200 available</p>
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <p class="text-center">The Late Survivor Kit</p>
+                            <label>
+                                <input type="radio" name="fb" value="late" />
+                                <img style="width: 100%" src="img/lvl3.png" alt="">
+                            </label>
+                            <p class="text-center">125 out of 300 available</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <h1>Step 2. Camping</h1>
+                    <p class="lead">Please choose the camping type: </p>
+                    <hr>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p class="lead">1. No camping</p>
+                                <label>
+                                    <input type="radio" name="fb" value="nocamping" />
+                                    <img style="width: 100%" src="img/coa17_campingdiagram_cc_mustcar_v1.png" alt="">
+                                </label>
+                                <p>Camping spots come in limited number. Please choose wisely.</p>
+
+                            </li>
+                            <li class="list-group-item">
+                                <p class="lead">2. Basic camping</p>
+                                <label>
+                                    <input type="radio" name="fb" value="basiccamping" />
+                                    <img style="width: 100%" src="img/coa17_campingdiagram_tc_size_v1.png" alt="">
+                                </label>
+                                <p>The basic camping spot has enough space for a tent in a 15FT x 10 FT space.</p>
+
+                            </li>
+                            <li class="list-group-item">
+                                <p class="lead">3. Premium camping</p>
+                                <label>
+                                    <input type="radio" name="fb" value="carcamping" />
+                                    <img style="width: 100%" src="img/coa17_campingdiagram_cc_size_v1.png" alt="">
+                                </label>
+                                <p>Big enough for a tent and a car or two tents, in a 30FT x 15FT space. </p>
+
+                            </li>
+
+                        </ul>
+                    </div>
 
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div style="width: 80%;height: 500px;background-color: #3c4443;margin: 0 auto;">
-                    <h3 class="text-center">STEP 2. Choose Camping</h3>
+
+                <div class="tab">
+                    <h1>Step 3. Additional survivor merchandise</h1>
+                    <p class="lead">Please choose any of the equipment available:</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img style="width: 100%" src="img/tShirt1.png" alt="">
+                        </div>
+                    </div>
+                    <hr>
 
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div style="width: 80%;height: 500px;background-color: slateblue;margin: 0 auto;">
-                    <h3 class="text-center">STEP 3. Choose additional merchandise</h3>
+                <div class="tab">
+                        <h1>Step 4. Shipping Address:</h1>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input class="form-control" id="firstName" placeholder="" value="" required="" type="text">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input class="form-control" id="lastName" placeholder="" value="" required="" type="text">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input class="form-control" id="username" placeholder="Username" required="" type="text">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input class="form-control" id="email" placeholder="you@example.com" type="email">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address">Address</label>
+                            <input class="form-control" id="address" placeholder="1234 Main St" required="" type="text">
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input class="form-control" id="address2" placeholder="Apartment or suite" type="text">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="country">Country</label>
+                                <select class="custom-select d-block w-100" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state">Region</label>
+                                <select class="custom-select d-block w-100" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="zip">Zip</label>
+                                <input class="form-control" id="zip" placeholder="" required="" type="text">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
 
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div style="width: 80%;height: 500px;background-color:khaki;margin: 0 auto;">
-                    <h3 class="text-center">STEP 4. finish</h3>
-                    <p class="lead">A list below with every item selected and total price</p>
-                    <ul class="list-group">
-                        <li class="list-group-item">Item 1 - 20 usd</li>
-                        <li class="list-group-item">Item 2 - 10 usd</li>
-                        <li class="list-group-item">Item 3 - 50 usd</li>
-                        <li class="list-group-item">Item 4 - 70 usd</li>
-                        <li class="list-group-item">Item 5 - 100 usd</li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item">Total Price - 270 usd</li>
 
-                    </ul>
-                    <button class="btn btn-primary" type="submit">This will redirect to payment</button>
+                <div class="tab">
+                    <h1>Step 5. Payment</h1>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" class="custom-control-input" checked="" required="" type="radio">
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" class="custom-control-input" required="" type="radio">
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-name">Name on card</label>
+                            <input class="form-control" id="cc-name" placeholder="" required="" type="text">
+                            <small class="text-muted">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">Credit card number</label>
+                            <input class="form-control" id="cc-number" placeholder="" required="" type="text">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">Expiration</label>
+                            <input class="form-control" id="cc-expiration" placeholder="" required="" type="text">
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">CVV</label>
+                            <input class="form-control" id="cc-cvv" placeholder="" required="" type="text">
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
                 </div>
-            </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-6"><button class="btn btn-info" id="prevBtn" onclick="nextPrev(-1)">Previous</button></div>
+                        <div class="col-6"><button class="btn btn-info" style="float: right" id="nextBtn" onclick="nextPrev(1)">Next</button></div>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+
+            </form>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="col-4">
+            <div class="order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3 text-white">
+                <span class="">Your cart</span>
+                <span class="badge badge-info badge-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Product name</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Second product</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Third item</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-info">
+                        <h6 class="my-0">Promo code</h6>
+                        <small>EXAMPLECODE</small>
+                    </div>
+                    <span class="text-info">-$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD)</span>
+                    <strong>$20</strong>
+                </li>
+            </ul>
+
+            <form class="card p-2" _lpchecked="1">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Promo code" type="text">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
     </div>
+
 </div>
 
 
 <!-- Optional JavaScript -->
+<script src="js/signupWizard.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
